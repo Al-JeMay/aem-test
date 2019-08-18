@@ -1,4 +1,4 @@
-# Angular Interview Test
+# Custom Tagging Input - Angular AEM Test
 
 Create a custom **tagging input** component that will work for both **reactive form** and **model**.
 
@@ -7,16 +7,14 @@ Create a custom **tagging input** component that will work for both **reactive f
 Run as Angular project.
 
 STEP 1
-clone this git file
-
-STEP 2
 ```bash
 npm install
 ```
-
 STEP 2
 ```bash
-run ng serve
+ng serve
 ```
+[Live Demo](https://aem-test-5c1a4.firebaseapp.com/)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
