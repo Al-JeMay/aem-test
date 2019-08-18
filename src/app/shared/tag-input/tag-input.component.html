@@ -1,0 +1,23 @@
+<!-- /*
+================================================
+ Title:  Tag Input Component - aem-angular-test
+ Author: Al JeMay
+ Date:   18 Aug 2019
+================================================
+*/ -->
+<div [formGroup]="formRegister">
+  <div class="form-group">
+    <div class="editor-tag" (click)="focusTagInput()">
+      <span class="tag-item" *ngFor="let tag of tags">
+        <span class="remove-tag" (click)="removeTag(tag)"><a class="boxclose" id="boxclose"></a></span>
+        {{tag}}
+      </span>
+      <input
+        placeholder="add skill..."
+        #tagInput type="text"
+        class="form-control input-tag"
+        (keyup)="onKeyUp($event)"
+        formControlName="tag">
+    </div>
+  </div>
+</div>

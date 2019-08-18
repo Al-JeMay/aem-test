@@ -1,0 +1,64 @@
+/*
+================================================
+ Title:  Tag Input Component - aem-angular-test
+ Author: Al JeMay
+ Date:   18 Aug 2019
+================================================
+*/
+.editor-tag {
+  cursor: text;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+  border: 1px #cccccc solid;
+
+  & .tag-item {
+    line-height: 22px;
+    border-radius: 3px;
+    height: 25px;
+    font-size: 16px;
+    display: inline-block;
+    background: #5bc0de;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    color: white;
+
+    a.boxclose{
+      float: left;
+      cursor:pointer;
+      color:#5bc0de;
+      border-radius: 14px;
+      background: white;
+      font-size: 14px;
+      font-weight: 900;
+      display: inline-block;
+      line-height: 0px;
+      padding: 8px 3px;
+      margin-top: 4px;
+    }
+
+    .boxclose:before {
+        content: "×";
+    }
+
+    .remove-tag {
+      padding-right: 10px;
+      cursor: pointer;
+    }
+
+  }
+
+  & .tag-item:not(:first-child) {
+    margin-left: 5px;
+  }
+
+  & input {
+    margin: 0;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
