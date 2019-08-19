@@ -3,7 +3,6 @@
 Create a custom **tagging input** component that will work for both **reactive form** and **model**.
 
 ## Installation
-
 Run as Angular project.
 
 Step 1
@@ -15,17 +14,16 @@ Step 2
 ng serve
 ```
 ## Usage
+Its property can be vary, this just an example on how to use it
 
 ```python
-<!-- custom tagging input component :::: START-->
-    <app-tag-input
-      [formRegister]="formRegister"
-      (removeTags)="removeTags($event)"
-      (addTags)="addTags($event)">
-    </app-tag-input>
-<!-- custom tagging input component :::: END-->
+<app-tag-input
+  [formGroup]="formGroup"
+  (removeSkillHandler)="removeSkillHandler($event)"
+  (addSkillHandler)="addSkillHandler($event)">
+</app-tag-input>
 ```
-
+## Live Demo
 [Live Demo](https://aem-test-5c1a4.firebaseapp.com/)
 
 ## License
