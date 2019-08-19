@@ -6,14 +6,26 @@ Create a custom **tagging input** component that will work for both **reactive f
 
 Run as Angular project.
 
-STEP 1
+Step 1
 ```bash
 npm install
 ```
-STEP 2
+Step 2
 ```bash
 ng serve
 ```
+## Usage
+
+```python
+<!-- custom tagging input component :::: START-->
+    <app-tag-input
+      [formRegister]="formRegister"
+      (removeTags)="removeTags($event)"
+      (addTags)="addTags($event)">
+    </app-tag-input>
+<!-- custom tagging input component :::: END-->
+```
+
 [Live Demo](https://aem-test-5c1a4.firebaseapp.com/)
 
 ## License
