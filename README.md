@@ -1,4 +1,4 @@
-# Custom Tagging Input - Angular AEM Test
+# Custom Tagging Input
 
 Create a custom **tagging input** component that will work for both **reactive form** and **model**.
 
